@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.io.smart.web.rest.LogsResourceIntTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-01-30T02:22:10" hostname="Nicholass-Air.fios-router.home" time="0.212">
+  <properties/>
+  <testcase name="changeLogs" classname="com.io.smart.web.rest.LogsResourceIntTest" time="0.093"/>
+  <testcase name="getAllLogs" classname="com.io.smart.web.rest.LogsResourceIntTest" time="0.082"/>
+  <testcase name="testLogstashAppender" classname="com.io.smart.web.rest.LogsResourceIntTest" time="0.034"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

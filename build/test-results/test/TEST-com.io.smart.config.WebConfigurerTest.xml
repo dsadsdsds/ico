@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.io.smart.config.WebConfigurerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-01-30T02:21:36" hostname="Nicholass-Air.fios-router.home" time="4.454">
+  <properties/>
+  <testcase name="testCorsFilterOnOtherPath" classname="com.io.smart.config.WebConfigurerTest" time="3.878"/>
+  <testcase name="testCorsFilterDeactivated" classname="com.io.smart.config.WebConfigurerTest" time="0.065"/>
+  <testcase name="testStartUpProdServletContext" classname="com.io.smart.config.WebConfigurerTest" time="0.332"/>
+  <testcase name="testUndertowHttp2Enabled" classname="com.io.smart.config.WebConfigurerTest" time="0.072"/>
+  <testcase name="testCorsFilterOnApiPath" classname="com.io.smart.config.WebConfigurerTest" time="0.053"/>
+  <testcase name="testStartUpDevServletContext" classname="com.io.smart.config.WebConfigurerTest" time="0.004"/>
+  <testcase name="testCorsFilterDeactivated2" classname="com.io.smart.config.WebConfigurerTest" time="0.035"/>
+  <testcase name="testCustomizeServletContainer" classname="com.io.smart.config.WebConfigurerTest" time="0.012"/>
+  <system-out><![CDATA[2018-01-29 21:21:40.699  INFO   --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application configuration, using profiles: prod
+2018-01-29 21:21:40.828  INFO   --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application fully configured
+2018-01-29 21:21:41.151  INFO   --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application configuration, using profiles: dev
+2018-01-29 21:21:41.153  INFO   --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application fully configured
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
