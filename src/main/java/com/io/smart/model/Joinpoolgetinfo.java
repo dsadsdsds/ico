@@ -6,6 +6,7 @@ public class Joinpoolgetinfo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
+	private String empty;
 	private String poolName;
 	private String deadline;	
 	private String adminWallet;
@@ -19,6 +20,12 @@ public class Joinpoolgetinfo implements Serializable {
 	private double maximum;
 	
 	
+	public String getEmpty() {
+		return empty;
+	}
+	public void setEmpty(String empty) {
+		this.empty = empty;
+	}
 	public String getAdminWallet() {
 		return adminWallet;
 	}

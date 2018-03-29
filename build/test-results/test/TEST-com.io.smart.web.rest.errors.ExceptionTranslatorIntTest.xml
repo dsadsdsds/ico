@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2018-01-30T02:22:07" hostname="Nicholass-Air.fios-router.home" time="2.493">
+<testsuite name="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2018-02-10T05:31:56" hostname="Nicholass-MacBook-Air.local" time="2.646">
   <properties/>
-  <testcase name="testMissingServletRequestPartException" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.546"/>
-  <testcase name="testMissingServletRequestParameterException" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.218"/>
-  <testcase name="testAccessDenied" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.179"/>
-  <testcase name="testParameterizedError" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.19"/>
-  <testcase name="testInternalServerError" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.186"/>
-  <testcase name="testMethodNotSupported" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.162"/>
-  <testcase name="testExceptionWithResponseStatus" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.138"/>
-  <testcase name="testMethodArgumentNotValid" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.395"/>
-  <testcase name="testParameterizedError2" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.154"/>
-  <testcase name="testUnauthorized" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.154"/>
-  <testcase name="testConcurrencyFailure" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.151"/>
+  <testcase name="testMissingServletRequestPartException" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.582"/>
+  <testcase name="testMissingServletRequestParameterException" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.203"/>
+  <testcase name="testAccessDenied" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.181"/>
+  <testcase name="testParameterizedError" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.205"/>
+  <testcase name="testInternalServerError" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.208"/>
+  <testcase name="testMethodNotSupported" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.175"/>
+  <testcase name="testExceptionWithResponseStatus" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.161"/>
+  <testcase name="testMethodArgumentNotValid" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.366"/>
+  <testcase name="testParameterizedError2" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.173"/>
+  <testcase name="testUnauthorized" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.199"/>
+  <testcase name="testConcurrencyFailure" classname="com.io.smart.web.rest.errors.ExceptionTranslatorIntTest" time="0.172"/>
   <system-out><![CDATA[
         ██╗ ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
         ██║ ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
@@ -23,18 +23,18 @@
 :: JHipster ??  :: Running Spring Boot 1.5.9.RELEASE ::
 :: http://www.jhipster.tech ::
 
-2018-01-29 21:21:46.467  INFO 81786 --- [    Test worker] c.i.s.w.r.e.ExceptionTranslatorIntTest   : No active profile set, falling back to default profiles: default
-2018-01-29 21:21:51.978  INFO 81786 --- [    Test worker] c.io.smart.config.MetricsConfiguration   : Initializing Metrics Log reporting
-2018-01-29 21:21:58.686  INFO 81786 --- [    Test worker] c.io.smart.config.LoggingConfiguration   : Initializing Logstash logging
-2018-01-29 21:21:58.868  INFO 81786 --- [    Test worker] c.io.smart.config.LoggingConfiguration   : Filtering metrics logs from all appenders except the LOGSTASH appender
-2018-01-29 21:22:02.803  WARN 81786 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2018-01-29 21:22:02.830  WARN 81786 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2018-01-29 21:22:07.521  INFO 81786 --- [    Test worker] c.i.s.w.r.e.ExceptionTranslatorIntTest   : Started ExceptionTranslatorIntTest in 25.846 seconds (JVM running for 32.679)
-2018-01-29 21:22:07.750  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Required request part 'missing Servlet request part' is not present
-2018-01-29 21:22:08.304  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Required parameter type parameter 'missing Servlet request parameter' is not present
-2018-01-29 21:22:08.495  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Forbidden: test access denied!
-2018-01-29 21:22:08.677  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Parameterized Exception
-2018-01-29 21:22:08.856 ERROR 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Internal Server Error
+2018-02-10 00:31:32.507  INFO 35660 --- [    Test worker] c.i.s.w.r.e.ExceptionTranslatorIntTest   : No active profile set, falling back to default profiles: default
+2018-02-10 00:31:38.752  INFO 35660 --- [    Test worker] c.io.smart.config.MetricsConfiguration   : Initializing Metrics Log reporting
+2018-02-10 00:31:46.712  INFO 35660 --- [    Test worker] c.io.smart.config.LoggingConfiguration   : Initializing Logstash logging
+2018-02-10 00:31:46.895  INFO 35660 --- [    Test worker] c.io.smart.config.LoggingConfiguration   : Filtering metrics logs from all appenders except the LOGSTASH appender
+2018-02-10 00:31:51.638  WARN 35660 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-02-10 00:31:51.658  WARN 35660 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-02-10 00:31:56.821  INFO 35660 --- [    Test worker] c.i.s.w.r.e.ExceptionTranslatorIntTest   : Started ExceptionTranslatorIntTest in 28.981 seconds (JVM running for 35.606)
+2018-02-10 00:31:57.066  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Required request part 'missing Servlet request part' is not present
+2018-02-10 00:31:57.634  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Required parameter type parameter 'missing Servlet request parameter' is not present
+2018-02-10 00:31:57.817  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Forbidden: test access denied!
+2018-02-10 00:31:58.005  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Parameterized Exception
+2018-02-10 00:31:58.213 ERROR 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Internal Server Error
 
 java.lang.RuntimeException: null
 	at com.io.smart.web.rest.errors.ExceptionTranslatorTestController.internalServerError(ExceptionTranslatorTestController.java:68)
@@ -114,12 +114,12 @@ java.lang.RuntimeException: null
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:745)
 
-2018-01-29 21:22:09.042  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Method Not Allowed: Request method 'POST' not supported
-2018-01-29 21:22:09.180  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: null
-2018-01-29 21:22:09.567  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Validation failed for argument at index 0 in method: public void com.io.smart.web.rest.errors.ExceptionTranslatorTestController.methodArgument(com.io.smart.web.rest.errors.ExceptionTranslatorTestController$TestDTO), with 1 error(s): [Field error in object 'testDTO' on field 'test': rejected value [null]; codes [NotNull.testDTO.test,NotNull.test,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [testDTO.test,test]; arguments []; default message [test]]; default message [may not be null]] 
-2018-01-29 21:22:09.735  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Parameterized Exception
-2018-01-29 21:22:09.889  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Unauthorized: test authentication failed!
-2018-01-29 21:22:10.041  WARN 81786 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Conflict: test concurrency failure
+2018-02-10 00:31:58.409  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Method Not Allowed: Request method 'POST' not supported
+2018-02-10 00:31:58.574  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: null
+2018-02-10 00:31:58.934  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Validation failed for argument at index 0 in method: public void com.io.smart.web.rest.errors.ExceptionTranslatorTestController.methodArgument(com.io.smart.web.rest.errors.ExceptionTranslatorTestController$TestDTO), with 1 error(s): [Field error in object 'testDTO' on field 'test': rejected value [null]; codes [NotNull.testDTO.test,NotNull.test,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [testDTO.test,test]; arguments []; default message [test]]; default message [may not be null]] 
+2018-02-10 00:31:59.119  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Parameterized Exception
+2018-02-10 00:31:59.313  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Unauthorized: test authentication failed!
+2018-02-10 00:31:59.490  WARN 35660 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Conflict: test concurrency failure
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
