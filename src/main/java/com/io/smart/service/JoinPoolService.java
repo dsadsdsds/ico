@@ -6,6 +6,8 @@ import java.math.RoundingMode;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.ColumnMapRowMapper;
@@ -22,6 +24,7 @@ public class JoinPoolService {
 	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
+	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
 	public Status joinpool(Userinfo request, String pin) {
 		Status status = new Status();
@@ -38,7 +41,7 @@ public class JoinPoolService {
 			status.setStatus("This transaction id already exists in our system");
 			return status;
 		}
-
+		
 		// check if poolname is valid can remove once fix html
 		String sqlCheck1 = "SELECT * FROM poolinfo WHERE poolname = ?";
 		ColumnMapRowMapper crm1 = new ColumnMapRowMapper();
@@ -98,8 +101,8 @@ public class JoinPoolService {
 		sender = sender.substring(i);
 		i = sender.indexOf('"');
 		validateSender = sender.substring(0, i).toLowerCase();
+		log.info("validate sender " + validateSender);
 		
-
 		// verify receiver
 		String receiver = response.getBody();
 		int j = receiver.indexOf("to");
@@ -108,6 +111,8 @@ public class JoinPoolService {
 		receiver = receiver.substring(j);
 		j = receiver.indexOf('"');
 		receiver = receiver.substring(0, j);
+		log.info("receiver " + receiver + " adminwallet " + adminWallet);
+		
 		if (!receiver.equalsIgnoreCase(adminWallet)) {
 			tx.setStatus(false);
 			return tx;
@@ -122,6 +127,8 @@ public class JoinPoolService {
 		index = value.indexOf('"');
 		value = value.substring(0, index);
 
+		log.info("actual value " + value );
+		
 		BigInteger bigInt = new BigInteger(value.substring(2), 16);
 		BigDecimal bigD = new BigDecimal(bigInt);
 		BigDecimal eighteen = new BigDecimal(1e18);

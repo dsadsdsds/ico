@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.io.smart.web.rest.util.PaginationUtilUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-02-10T05:31:59" hostname="Nicholass-MacBook-Air.local" time="0.005">
+<testsuite name="com.io.smart.web.rest.util.PaginationUtilUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-13T09:07:21" hostname="x" time="0.046">
   <properties/>
-  <testcase name="generatePaginationHttpHeadersTest" classname="com.io.smart.web.rest.util.PaginationUtilUnitTest" time="0.005"/>
+  <testcase name="generatePaginationHttpHeadersTest" classname="com.io.smart.web.rest.util.PaginationUtilUnitTest" time="0.046"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

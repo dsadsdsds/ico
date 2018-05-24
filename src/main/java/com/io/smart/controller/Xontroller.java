@@ -50,7 +50,7 @@ public class Xontroller {
 	/**
 	 * POST /items -> Create a new item.
 	 */
-	@CrossOrigin(origins = "http://ec2-18-218-238-56.us-east-2.compute.amazonaws.com:3000")
+	@CrossOrigin(origins = "http://ec2-18-219-54-214.us-east-2.compute.amazonaws.com:3000")
 	@ResponseBody @RequestMapping(value = "/viewadminpool", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public Viewpooladminresponse viewpooladmin(@RequestParam String poolName,
 			@RequestParam String password) {
@@ -59,17 +59,17 @@ public class Xontroller {
 		request.setPoolName(poolName);
 		return viewPoolService.viewpooladmin(request);
 	}
-	@CrossOrigin(origins = "http://ec2-18-218-238-56.us-east-2.compute.amazonaws.com:3000")
+	@CrossOrigin(origins = "http://ec2-18-219-54-214.us-east-2.compute.amazonaws.com:3000")
 	@ResponseBody @RequestMapping(value = "/viewuserpool", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public Viewpoolsuserresponse viewpoolsuser(@RequestParam String txId) {
 		return viewPoolService.viewpooluser(txId);
 	}
-	@CrossOrigin(origins = "http://ec2-18-218-238-56.us-east-2.compute.amazonaws.com:3000")
+	@CrossOrigin(origins = "http://ec2-18-219-54-214.us-east-2.compute.amazonaws.com:3000")
 	@ResponseBody @RequestMapping(value = "/createpool", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public Status createpool(@RequestBody Createpoolrequest request) {
 		return createPoolService.createpool(request);
 	}
-	@CrossOrigin(origins = "http://ec2-18-218-238-56.us-east-2.compute.amazonaws.com:3000")
+	@CrossOrigin(origins = "http://ec2-18-219-54-214.us-east-2.compute.amazonaws.com:3000")
 	@ResponseBody @RequestMapping(value = "/joinuserpool", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public Status joinpooluser(@RequestBody Joinpoolrequest request) {
 		Userinfo uinfo = new Userinfo();
@@ -79,14 +79,13 @@ public class Xontroller {
 		uinfo.setTxid(request.getTxId());
 		uinfo.setUsername(request.getUsername());
 		uinfo.setUserwallet(request.getUserWallet());
+		
 		log.info("Request: Amount " + request.getAmount() + " Note: " + request.getNote() 
 		+ " Poolname " + request.getPoolName() + " Username " + request.getUsername() + " wallet " + request.getUserWallet());
+		
 		Userinfo temp = viewPoolService.getpool(uinfo);
 		uinfo.setExpectedbonus(temp.getExpectedbonus());
-	//	uinfo.setExpectedbonuspercent(temp.getExpectedbonuspercent());
-//		uinfo.setExpecteddiscount(temp.getExpecteddiscount());
-		
-//		uinfo.setAmountusd(33);
+
 		uinfo.setNumofparticipants(5);
 		uinfo.setPercentageofpool(10);
 		
@@ -94,20 +93,20 @@ public class Xontroller {
 		uinfo.setTimestamputc(currentTime + "");
 		return joinPoolService.joinpool(uinfo, request.getPin());
 	}
-	@CrossOrigin(origins = "http://ec2-18-218-238-56.us-east-2.compute.amazonaws.com:3000")
+	@CrossOrigin(origins = "http://ec2-18-219-54-214.us-east-2.compute.amazonaws.com:3000")
 	@RequestMapping(value = "/test", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public String test() {
 		return "Hello";
 	}
-	@CrossOrigin(origins = "http://ec2-18-218-238-56.us-east-2.compute.amazonaws.com:3000")
+	@CrossOrigin(origins = "http://ec2-18-219-54-214.us-east-2.compute.amazonaws.com:3000")
 	@ResponseBody @RequestMapping(value = "/viewpoolinfo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public Joinpoolgetinfo poolinfo(@RequestParam String poolname, @RequestParam String adminwallet) {
 		return viewPoolService.getpoolinfo(poolname, adminwallet);
 	}
 	
-	@CrossOrigin(origins = "http://ec2-18-218-238-56.us-east-2.compute.amazonaws.com:3000")
+	@CrossOrigin(origins = "http://ec2-18-219-54-214.us-east-2.compute.amazonaws.com:3000")
 	@ResponseBody @RequestMapping(value = "/registerwallet", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-	public WalletModel poolinfo(@RequestBody RegisterWalletModel walletaddress) {
+	public WalletModel wallet(@RequestBody RegisterWalletModel walletaddress) {
 		 return registerWalletService.createpin(walletaddress.getWalletaddress());
 	}
 	

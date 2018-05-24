@@ -41,12 +41,10 @@ public class ViewPoolService {
 		info.setPoolName(poolname);
 		info.setAdminWallet((String) results.get(i).get("adminwallet"));
 		info.setDeadline((String) results.get(i).get("deadline"));
-		// info.setTypeOfCoin((String) results.get(i).get("typeofcoin"));
+
 		info.setPercentage((double) results.get(i).get("percentage"));
 		info.setExpectedBonus((double) results.get(i).get("expectedbonus"));
-		// info.setExpectedBonusPercent((double) results.get(i).get("expectedbonuspercent"));
-		// info.setExpecteddiscount((double) results.get(i).get("expecteddiscount"));
-		//info.setExpecteddiscount(0);
+
 		info.setExpectedCoinValue((double) results.get(i).get("expectedcoinprice"));
 		info.setMinimum((double) results.get(i).get("minimum"));
 		info.setMaximum((double) results.get(i).get("maximum"));
@@ -67,9 +65,6 @@ public class ViewPoolService {
 		}
 		int i = 0;
 
-		log.info(" eb " + results.get(0).get("expectedbonus"));
-		log.info(" eb " + results.get(0).get("expectedbonuspercent"));
-		log.info(" eb " + results.get(0).get("expecteddiscount"));
 
 		request.setExpectedbonus((double) results.get(i).get("expectedbonus"));
 		if (results.get(0).get("expectedbonuspercent") == null) {
@@ -125,7 +120,7 @@ public class ViewPoolService {
 			newUser.setExpectedbonus((double) results.get(i).get("expectedbonuspercent"));
 			newUser.setExpectedbonuspercent((double) results.get(i).get("expectedbonuspercent"));
 			newUser.setExpectedbonus(0);
-			// newUser.setExpecteddiscount((double) results.get(i).get("expecteddiscount"));
+
 			newUser.setNote((String) results.get(i).get("note"));
 			newUser.setNumofparticipants((int) results.get(i).get("numofparticipants"));
 			newUser.setPoolname((String) results.get(i).get("poolname"));
@@ -163,7 +158,7 @@ public class ViewPoolService {
 		newUser.setAmountusd((double) results.get(i).get("amountusd"));
 		newUser.setExpectedbonus((double) results.get(i).get("expectedbonuspercent"));
 		newUser.setExpectedbonuspercent((double) results.get(i).get("expectedbonuspercent"));
-		// newUser.setExpecteddiscount((double) results.get(i).get("expecteddiscount"));
+
 		newUser.setExpecteddiscount(0);
 		newUser.setNote((String) results.get(i).get("note"));
 		newUser.setNumofparticipants((int) results.get(i).get("numofparticipants"));

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.io.smart.config.WebConfigurerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-02-10T05:31:23" hostname="Nicholass-MacBook-Air.local" time="4.246">
+<testsuite name="com.io.smart.config.WebConfigurerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-05-13T09:07:34" hostname="x" time="0.19">
   <properties/>
-  <testcase name="testCorsFilterOnOtherPath" classname="com.io.smart.config.WebConfigurerTest" time="3.738"/>
-  <testcase name="testCorsFilterDeactivated" classname="com.io.smart.config.WebConfigurerTest" time="0.047"/>
-  <testcase name="testStartUpProdServletContext" classname="com.io.smart.config.WebConfigurerTest" time="0.275"/>
-  <testcase name="testUndertowHttp2Enabled" classname="com.io.smart.config.WebConfigurerTest" time="0.079"/>
-  <testcase name="testCorsFilterOnApiPath" classname="com.io.smart.config.WebConfigurerTest" time="0.046"/>
-  <testcase name="testStartUpDevServletContext" classname="com.io.smart.config.WebConfigurerTest" time="0.004"/>
-  <testcase name="testCorsFilterDeactivated2" classname="com.io.smart.config.WebConfigurerTest" time="0.042"/>
-  <testcase name="testCustomizeServletContainer" classname="com.io.smart.config.WebConfigurerTest" time="0.011"/>
-  <system-out><![CDATA[2018-02-10 00:31:26.875  INFO   --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application configuration, using profiles: prod
-2018-02-10 00:31:26.964  INFO   --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application fully configured
-2018-02-10 00:31:27.275  INFO   --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application configuration, using profiles: dev
-2018-02-10 00:31:27.276  INFO   --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application fully configured
+  <testcase name="testCorsFilterOnOtherPath" classname="com.io.smart.config.WebConfigurerTest" time="0.042"/>
+  <testcase name="testCorsFilterDeactivated" classname="com.io.smart.config.WebConfigurerTest" time="0.019"/>
+  <testcase name="testStartUpProdServletContext" classname="com.io.smart.config.WebConfigurerTest" time="0.035"/>
+  <testcase name="testUndertowHttp2Enabled" classname="com.io.smart.config.WebConfigurerTest" time="0.019"/>
+  <testcase name="testCorsFilterOnApiPath" classname="com.io.smart.config.WebConfigurerTest" time="0.048"/>
+  <testcase name="testStartUpDevServletContext" classname="com.io.smart.config.WebConfigurerTest" time="0.001"/>
+  <testcase name="testCorsFilterDeactivated2" classname="com.io.smart.config.WebConfigurerTest" time="0.015"/>
+  <testcase name="testCustomizeServletContainer" classname="com.io.smart.config.WebConfigurerTest" time="0.007"/>
+  <system-out><![CDATA[2018-05-13 05:07:34.495  INFO 11259 --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application configuration, using profiles: prod
+2018-05-13 05:07:34.522  INFO 11259 --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application fully configured
+2018-05-13 05:07:34.598  INFO 11259 --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application configuration, using profiles: dev
+2018-05-13 05:07:34.598  INFO 11259 --- [    Test worker] com.io.smart.config.WebConfigurer        : Web application fully configured
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

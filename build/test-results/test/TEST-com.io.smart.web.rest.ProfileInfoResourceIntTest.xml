@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.io.smart.web.rest.ProfileInfoResourceIntTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-02-10T05:31:59" hostname="Nicholass-MacBook-Air.local" time="0.113">
+<testsuite name="com.io.smart.web.rest.ProfileInfoResourceIntTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-13T09:07:33" hostname="x" time="0.161">
   <properties/>
-  <testcase name="getProfileInfoWithoutActiveProfiles" classname="com.io.smart.web.rest.ProfileInfoResourceIntTest" time="0.044"/>
-  <testcase name="getProfileInfoWithoutRibbon" classname="com.io.smart.web.rest.ProfileInfoResourceIntTest" time="0.031"/>
-  <testcase name="getProfileInfoWithRibbon" classname="com.io.smart.web.rest.ProfileInfoResourceIntTest" time="0.034"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="getProfileInfoWithoutActiveProfiles" classname="com.io.smart.web.rest.ProfileInfoResourceIntTest" time="0.127"/>
+  <testcase name="getProfileInfoWithoutRibbon" classname="com.io.smart.web.rest.ProfileInfoResourceIntTest" time="0.016"/>
+  <testcase name="getProfileInfoWithRibbon" classname="com.io.smart.web.rest.ProfileInfoResourceIntTest" time="0.017"/>
+  <system-out><![CDATA[
+        ██╗ ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
+        ██║ ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
+        ██║ ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝
+  ██╗   ██║ ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║
+  ╚██████╔╝ ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗
+   ╚═════╝  ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝
+
+:: JHipster ??  :: Running Spring Boot 1.5.9.RELEASE ::
+:: http://www.jhipster.tech ::
+
+2018-05-13 05:07:24.568  INFO 11259 --- [    Test worker] c.i.s.w.rest.ProfileInfoResourceIntTest  : No active profile set, falling back to default profiles: default
+2018-05-13 05:07:26.905  INFO 11259 --- [    Test worker] c.io.smart.config.MetricsConfiguration   : Initializing Metrics Log reporting
+2018-05-13 05:07:29.478  INFO 11259 --- [    Test worker] c.io.smart.config.LoggingConfiguration   : Initializing Logstash logging
+2018-05-13 05:07:29.552  INFO 11259 --- [    Test worker] c.io.smart.config.LoggingConfiguration   : Filtering metrics logs from all appenders except the LOGSTASH appender
+2018-05-13 05:07:31.219  WARN 11259 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-05-13 05:07:31.227  WARN 11259 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-05-13 05:07:33.122  INFO 11259 --- [    Test worker] c.i.s.w.rest.ProfileInfoResourceIntTest  : Started ProfileInfoResourceIntTest in 10.638 seconds (JVM running for 11.986)
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
