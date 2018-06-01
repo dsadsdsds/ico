@@ -52,7 +52,21 @@ public class ViewPoolService {
 		return info;
 
 	}
+	
+	public String getAdminWalletOfPool(String poolname ) {
 
+		String sql = "SELECT * FROM poolinfo WHERE poolname = ?";
+		ColumnMapRowMapper crm = new ColumnMapRowMapper();
+		List<Map<String, Object>> results = jdbcTemplate.query(sql, crm, poolname.toLowerCase());
+
+		if (results.size() == 0) {
+			
+			return null;
+		}
+		
+		return (String)results.get(0).get("adminwallet");
+	}
+	
 	public Userinfo getpool(Userinfo request ) {
 
 		String sql = "SELECT * FROM poolinfo WHERE poolname = ?";
